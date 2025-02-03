@@ -25,7 +25,6 @@ jobs:
       run: mvn -B verify --file pom.xml
     # workaround for user's that have uppercase letters in their names
     # source: https://github.com/orgs/community/discussions/27086
-    # note
     - name: Set lower case owner name
       run: |
         echo "OWNER_LC=${OWNER,,}" >>${GITHUB_ENV}
